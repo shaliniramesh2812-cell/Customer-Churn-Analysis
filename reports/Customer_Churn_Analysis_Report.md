@@ -51,22 +51,22 @@ The following preparation steps were performed:
 The analysis covered six visualizations:
 
 1. **Churn by Contract Type:** Month-to-month customers showed the highest churn rate (approximately 42.71%), while two-year contract customers showed the lowest (approximately 2.83%).
-     ![Churn by Contract Type]("C:\Users\HP\Documents\customer_churn_analysis\images\churn_by_contract.png")
+    ![Churn by Contract Type](../images/churn_by_contract.png)
 
 2. **Churn by Internet Service:** Fiber optic customers showed the highest churn percentage among internet service categories.
-     ![Churn by Internet Service]("C:\Users\HP\Documents\customer_churn_analysis\images\churn_by_internet.png")
+    ![Churn by Internet Service](../images/churn_by_internet.png)
 
 3. **Churn by Payment Method:** Electronic check users had the highest churn percentage.
-     ![Churn by Payment Method]("C:\Users\HP\Documents\customer_churn_analysis\images\churn_by_payment.png")
+     ![Churn by Payment Method](../images/churn_by_payment.png)
 
 4. **Churn by Customer Tenure:** Customers with shorter tenure were more likely to churn.
-     ![Churn by Customer Tenure]("C:\Users\HP\Documents\customer_churn_analysis\images\churn_by_tenure.png")
+     ![Churn by Customer Tenure](../images/churn_by_tenure.png)
 
 5. **Tenure and Customer Type:** Senior citizens showed higher churn than non-senior customers. The first 12 months were the highest-churn tenure group for both customer types.
-     ![Tenure and Customer Type]("C:\Users\HP\Documents\customer_churn_analysis\images\tenure_customer_type.png")
+     ![Tenure and Customer Type](../images/tenure_customer_type.png)
 
 6. **Monthly Charges vs Tenure by Churn:** Churned customers were more concentrated at shorter tenure. Their average monthly charges were also higher.
-     ![Monthly Charges vs Tenure by Churn]("C:\Users\HP\Documents\customer_churn_analysis\images\charges_vs_tenure.png")
+    ![Monthly Charges vs Tenure by Churn](../images/charges_vs_tenure.png)
 ## 7. Key Findings
 
 - Total customers analyzed: 7,043.
