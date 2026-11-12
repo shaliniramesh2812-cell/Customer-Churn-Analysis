@@ -26,6 +26,7 @@ The objective is to identify customer characteristics and service patterns assoc
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
+- Google BigQuery (SQL)
 
 ## Dataset
 
@@ -43,6 +44,22 @@ The objective is to identify customer characteristics and service patterns assoc
 - Electronic check users had the highest churn percentage among payment methods.
 - Fiber optic customers had the highest churn percentage among internet service categories.
 - Average monthly charges were higher among churned customers ($74.44) than customers who stayed ($61.27).
+
+  
+## SQL Analysis
+
+Performed SQL-based customer churn analysis using Google BigQuery.
+
+Key techniques:
+- Data exploration and aggregation
+- GROUP BY and HAVING
+- CASE WHEN and CTEs
+- Window functions (RANK, DENSE_RANK, ROW_NUMBER, LAG, LEAD)
+- INNER, LEFT, RIGHT and FULL OUTER JOIN
+- Subqueries and correlated subqueries
+
+SQL analysis file: [customer_churn_analysis.sql](sql/customer_churn_analysis.sql)
+
 
 ## High-Risk Customer Segment
 
