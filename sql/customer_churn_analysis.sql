@@ -483,3 +483,42 @@ FROM `customer-churn-sql.churn_analysis.telco_customers` AS t
 FULL OUTER JOIN `customer-churn-sql.churn_analysis.customer_summary` AS s
 ON t.customerID = s.customerID
 LIMIT 20;
+
+-- Create contract-level summary table
+
+CREATE OR REPLACE TABLE
+`customer-churn-sql.churn_analysis.contract_summary` AS
+
+SELECT
+    Contract,
+    COUNT(*) AS total_customers,
+    COUNTIF(Churn = TRUE) AS churned_customers,
+    ROUND(
+        SAFE_DIVIDE(COUNTIF(Churn = TRUE), COUNT(*)) * 100,
+        2
+    ) AS churn_rate
+FROM
+`customer-churn-sql.churn_analysis.telco_customers`
+GROUP BY Contract;
+
+
+-- Join customer details with contract summary
+
+SELECT
+    t.customerID,
+    t.Contract,
+    t.MonthlyCharges,
+    t.Churn,
+    s.total_customers AS contract_total_customers,
+    s.churned_customers AS contract_churned_customers,
+    s.churn_rate AS contract_churn_rate
+FROM
+    `customer-churn-sql.churn_analysis.telco_customers` AS t
+INNER JOIN
+    `customer-churn-sql.churn_analysis.contract_summary` AS s
+ON
+    t.Contract = s.Contract
+ORDER BY
+    s.churn_rate DESC,
+    t.MonthlyCharges DESC
+LIMIT 20;
