@@ -97,6 +97,21 @@ This segment represents an important opportunity for targeted customer retention
 ### 6. Monthly Charges vs Tenure by Churn
 ![Monthly Charges vs Tenure](images/charges_vs_tenure.png)
 
+## 📊 Customer Churn Analysis Dashboard
+
+The dashboard provides an overview of customer churn patterns,
+including key performance indicators and churn rates across
+different customer segments.
+
+![Customer Churn Dashboard](images/customer_churn_dashboard.png)
+
+### Key Metrics
+
+- Total Customers: 7,043
+- Churned Customers: 1,869
+- Retained Customers: 5,174
+- Overall Churn Rate: 26.54%
+
 ## Business Recommendations
 
 1. Improve onboarding and support for new customers.
